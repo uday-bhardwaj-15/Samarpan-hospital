@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -14,27 +14,33 @@ export default function ContactForm() {
     email: "",
     phone: "",
     message: "",
-  })
+  });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-  }
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+  };
 
   return (
     <section id="contact" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">Get in Touch</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+          Get in Touch
+        </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <Card>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-8">Contact Information</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-8">
+                  Contact Information
+                </h3>
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
@@ -49,7 +55,9 @@ export default function ContactForm() {
                     <Mail className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-semibold text-gray-900">Email</h4>
-                      <p className="text-gray-600">contact@seamlesshealth.com</p>
+                      <p className="text-gray-600">
+                        contact@Samarpan Hospital.com
+                      </p>
                     </div>
                   </div>
 
@@ -57,7 +65,9 @@ export default function ContactForm() {
                     <MapPin className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-semibold text-gray-900">Address</h4>
-                      <p className="text-gray-600">123 Medical Plaza, Healthcare City, HC 12345</p>
+                      <p className="text-gray-600">
+                        123 Medical Plaza, Healthcare City, HC 12345
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -117,12 +127,16 @@ export default function ContactForm() {
               required
             ></textarea>
 
-            <Button type="submit" size="lg" className="w-full bg-blue-600 hover:bg-blue-700">
+            <Button
+              type="submit"
+              size="lg"
+              className="w-full bg-blue-600 hover:bg-blue-700"
+            >
               Send Message
             </Button>
           </form>
         </div>
       </div>
     </section>
-  )
+  );
 }
