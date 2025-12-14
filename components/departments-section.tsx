@@ -6,25 +6,65 @@ import TeamCarousel from "@/components/lightswind/team-carousel"; // adjust path
 
 const departmentCards = [
   {
-    title: "Cardiology",
-    subtitle: "Heart Care",
+    title: "Nephrology",
+    subtitle: "Chronic Kidney Disease",
     description:
-      "Advanced cardiovascular treatments and diagnostic services for heart health",
-    imageSrc: "/cardiology-heart-specialist-doctor-hospital.jpg",
+      "Kidney Transplant Planning and Follow Up, Acute Kidney Disease, Interventional Nephrology",
+    imageSrc:
+      "https://images.unsplash.com/photo-1618939304347-e91b1f33d2ab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGtpZG5leXxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
-    title: "Neurology",
-    subtitle: "Brain Health",
-    description:
-      "Comprehensive neurological care for brain and nervous system disorders",
-    imageSrc: "/neurology-brain-specialist.jpg",
+    title: "Dialysis Unit",
+    subtitle: "Hemo Dialysis",
+    description: "CAPD, Peritoneal Dialysis",
+    imageSrc:
+      "https://images.unsplash.com/photo-1669930605340-801a0be1f5a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fERpYWx5c2lzJTIwVW5pdHxlbnwwfHwwfHx8MA%3D%3D",
   },
   {
-    title: "Orthopedics",
-    subtitle: "Joint Care",
+    title: "Operation Theater",
+    subtitle: "Kidney Biopsy",
     description:
-      "Specialized bone and joint care with advanced surgical techniques",
-    imageSrc: "/orthopedics-bone-joint-specialist.jpg",
+      "AV Fistula Surgery, IJV/Femoral HD Catheterisation, IJV Permanent Tunneled HD Catheterisation",
+    imageSrc:
+      "https://images.unsplash.com/photo-1640876777002-badf6aee5bcc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8T3BlcmF0aW9ufGVufDB8fDB8fHww",
+  },
+  {
+    title: "Physiotherapy",
+    subtitle: "Post Hospitalisation Care",
+    description:
+      "Stroke Rehabilitation, Post Trauma/Fracture Rehabilitation, AV Fistula Care Programme, Home Visit for Physiotherapy, Online Consultation, Call Now or Visit the Website",
+    imageSrc:
+      "https://images.unsplash.com/photo-1706353399656-210cca727a33?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8UGh5c2lvdGhlcmFweXxlbnwwfHwwfHx8MA%3D%3D",
+  },
+  {
+    title: "Clinical Guidance and Diagnosis",
+    subtitle: "Guidance for Complex Medical Decisions",
+    description:
+      "Evidence Based Medical Decisions, Evidence Based Practice, Diagnosis and Second Opinion",
+    imageSrc:
+      "https://images.unsplash.com/photo-1619691249147-c5689d88016b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RGlhZ25vc2lzfGVufDB8fDB8fHww",
+  },
+  {
+    title: "Pharmacy",
+    subtitle: "Post Hospitalisation Care",
+    description:
+      "Stroke Rehabilitation, Post Trauma/Fracture Rehabilitation, AV Fistula Care Programme, Home Delivery Medicine",
+    imageSrc:
+      "https://images.unsplash.com/photo-1576602976047-174e57a47881?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UGhhcm1hY3l8ZW58MHx8MHx8fDA%3D",
+  },
+  {
+    title: "Laboratory",
+    subtitle: "Home Collection Available",
+    description: "Contact Number:- 9826293340",
+    imageSrc:
+      "https://images.unsplash.com/photo-1602052577122-f73b9710adba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TGFib3JhdG9yeXxlbnwwfHwwfHx8MA%3D%3D",
+  },
+  {
+    title: "Research",
+    subtitle: "Indian Chronic Kidney Disease Research",
+    description: "",
+    imageSrc:
+      "https://plus.unsplash.com/premium_photo-1661761077411-d50cba031848?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UmVzZWFyY2h8ZW58MHx8MHx8fDA%3D",
   },
 ];
 
@@ -82,55 +122,33 @@ export default function DepartmentsSection() {
           />
         </div>
 
-        {/* DESKTOP: two-column with PlasmaGlobe + cards list */}
-        <div className="hidden md:grid grid-cols-2 gap-12 items-start mt-8">
-          {/* <div className="relative h-96 rounded-xl overflow-hidden shadow-xl">
-            <PlasmaGlobe />
-          </div> */}
-
-          <div className="space-y-6">
-            {departmentCards.map((card, idx) => (
-              <article
-                key={idx}
-                className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-4 items-start"
-              >
-                <div
-                  className="w-full md:w-36 h-24 md:h-24 rounded-md flex-shrink-0 bg-cover bg-center shadow-inner"
-                  style={{
-                    backgroundImage: `url(${card.imageSrc})`,
-                  }}
-                  role="img"
-                  aria-label={`${card.title} image`}
-                />
-
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-1">
-                    {card.title}
-                  </h3>
-                  <p className="text-blue-600 font-semibold mb-2 text-sm">
-                    {card.subtitle}
-                  </p>
-                  <p className="text-gray-600 text-sm leading-relaxed mb-3">
-                    {card.description}
-                  </p>
-                  <div className="flex gap-3">
-                    <a
-                      href="#"
-                      className="px-4 py-2 rounded-md bg-blue-600 text-white font-medium shadow-sm hover:brightness-95 transition"
-                    >
-                      Learn more
-                    </a>
-                    <a
-                      href="#"
-                      className="px-3 py-2 rounded-md border border-gray-200 text-gray-700 text-sm"
-                    >
-                      Book Appointment
-                    </a>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
+        <div className="hidden md:block mt-8">
+          <TeamCarousel
+            members={members}
+            title="Departments"
+            titleSize="md"
+            titleColor="rgba(12, 74, 162, 1)"
+            // mobile tuned sizes
+            cardWidth={350}
+            cardHeight={430}
+            cardRadius={20}
+            showArrows={true} // on mobile, prefer swipe
+            showDots={false}
+            keyboardNavigation={false}
+            touchNavigation={true}
+            animationDuration={450}
+            autoPlay={3500}
+            pauseOnHover={true}
+            visibleCards={1}
+            sideCardScale={0.95}
+            sideCardOpacity={0.85}
+            grayscaleEffect={false}
+            infoPosition="bottom"
+            infoTextColor="rgb(8, 42, 123)"
+            className="bg-white/0 py-6"
+            cardClassName="rounded-xl overflow-hidden"
+            initialIndex={0}
+          />
         </div>
 
         {/* Tablet: small card grid fallback */}

@@ -11,7 +11,7 @@ export default function DirectorMessage() {
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="flex-shrink-0">
                 <img
-                  src="/doctor-portrait.png"
+                  src="https://cdn.hexahealth.com/Image/webp/480x480/1731500065595-956405713.webp"
                   alt="Director"
                   className="w-40 h-40 rounded-lg object-cover"
                 />
@@ -28,8 +28,13 @@ export default function DirectorMessage() {
                   dedicated team works tirelessly to ensure every patient
                   receives compassionate and personalized treatment."
                 </p>
-                <p className="text-gray-700 font-semibold">Dr. Rajesh Kumar</p>
-                <p className="text-gray-600 text-sm">Chief Medical Officer</p>
+                <p className="text-gray-700 font-semibold">
+                  Dr Gopesh Kumar Modi
+                </p>
+                <p className="text-gray-600 text-sm">
+                  MBBS (AIIMS, New Delhi), MD (AIIMS), DM (Nephrology-AIIMS), BE
+                  (Tufts Medical Centre,Boston,USA)
+                </p>
               </div>
             </div>
           </CardContent>

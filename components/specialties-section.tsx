@@ -95,7 +95,7 @@ function StickyGallery({
 
   return (
     <div className={`w-full ${className}`} ref={containerRef}>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className=" md:grid-cols-2 gap-6">
         {/* IMAGE / STICKY AREA */}
         <div className="order-1 md:order-none">
           <div className="relative h-64 md:h-[480px] w-full overflow-hidden rounded-2xl shadow-md">
@@ -138,62 +138,6 @@ function StickyGallery({
               </button>
             ))}
           </div>
-        </div>
-
-        {/* CONTENT / LIST OF CARDS */}
-        <div className="space-y-6 order-2">
-          {items.map((s, idx) => {
-            const Icon = s.icon;
-            return (
-              <section
-                key={s.id}
-                ref={(el: any) => (sectionsRef.current[idx] = el)}
-                data-idx={idx}
-                className="scroll-mt-6"
-              >
-                <Card
-                  className={`border-l-4 ${
-                    idx === active
-                      ? "border-l-blue-600"
-                      : "border-l-transparent"
-                  }`}
-                >
-                  <CardContent className="p-6">
-                    <div className="flex gap-4 items-start">
-                      <Icon className="w-12 h-12 text-blue-600" />
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-1">
-                          {s.title}
-                        </h3>
-                        <p className="text-gray-600 mb-3">{s.description}</p>
-                        {/* When card clicked/tapped — scroll smoothly to make it the active viewport */}
-                        <div className="flex gap-2">
-                          <button
-                            onClick={() => {
-                              // scroll this section into center of viewport for clearer activation
-                              sectionsRef.current[idx]?.scrollIntoView({
-                                behavior: "smooth",
-                                block: "center",
-                              });
-                            }}
-                            className="text-sm underline"
-                          >
-                            View
-                          </button>
-                          <button
-                            onClick={() => setActive(idx)}
-                            className="text-sm text-blue-600"
-                          >
-                            Show image
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </section>
-            );
-          })}
         </div>
       </div>
     </div>
