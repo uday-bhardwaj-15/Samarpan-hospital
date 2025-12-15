@@ -55,10 +55,7 @@ export default function Header() {
             >
               Gallery
             </a>
-            <a
-              href="#contact"
-              className="text-gray-600 hover:text-blue-600 transition"
-            ></a>
+
             <Button className="bg-[#b94198] text-white  hover:bg-[#b94198]/10 hover:text-[#b94198]">
               Book Appointment
             </Button>
@@ -84,7 +81,7 @@ export default function Header() {
               Doctors
             </a>
             <a
-              href="#departments"
+              href="departments"
               className="block text-gray-600 hover:text-blue-600 py-2"
             >
               Departments
@@ -94,6 +91,18 @@ export default function Header() {
               className="block text-gray-600 hover:text-blue-600 py-2"
             >
               Contact
+            </a>
+            <a
+              href="about"
+              className="text-gray-600 hover:text-blue-600 transition"
+            >
+              About Us
+            </a>
+            <a
+              href="gallery"
+              className="text-gray-600 hover:text-blue-600 transition"
+            >
+              Gallery
             </a>
             <Button className="w-full bg-blue-600 hover:bg-blue-700">
               Book Appointment
