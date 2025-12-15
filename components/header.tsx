@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
+import Image from "next/image";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,10 +11,8 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
+          <Image src="/logo.PNG" height={80} width={80} alt="logo" />
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">
-              S
-            </div>
             <span className="text-xl font-bold text-gray-900">
               Samarpan Hospital
             </span>
@@ -34,7 +32,7 @@ export default function Header() {
               Doctors
             </a>
             <a
-              href="#departments"
+              href="departments"
               className="text-gray-600 hover:text-blue-600 transition"
             >
               Departments
@@ -45,7 +43,23 @@ export default function Header() {
             >
               Contact
             </a>
-            <Button className="bg-blue-600 hover:bg-blue-700">
+            <a
+              href="about"
+              className="text-gray-600 hover:text-blue-600 transition"
+            >
+              About Us
+            </a>
+            <a
+              href="gallery"
+              className="text-gray-600 hover:text-blue-600 transition"
+            >
+              Gallery
+            </a>
+            <a
+              href="#contact"
+              className="text-gray-600 hover:text-blue-600 transition"
+            ></a>
+            <Button className="bg-[#b94198] text-white  hover:bg-[#b94198]/10 hover:text-[#b94198]">
               Book Appointment
             </Button>
           </nav>
