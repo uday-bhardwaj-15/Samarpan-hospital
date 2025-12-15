@@ -67,12 +67,26 @@ const Gallery = () => {
       {/* Navigation */}
 
       {/* Hero Section */}
-      <section className="pt-24 pb-12 md:pt-32 md:pb-20 bg-gradient-to-br from-[#b94198]/10 via-white to-[#b94198]/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#1a1a2e] mb-4">
-            Our Gallery
+      <section
+        className="pt-24 pb-16 px-4"
+        style={{
+          background: "linear-gradient(180deg, #fdf2f8 0%, #ffffff 100%)",
+        }}
+      >
+        <div className="container mx-auto text-center">
+          <span
+            className="inline-block px-4 py-2 rounded-full text-sm font-semibold mb-4"
+            style={{ background: "rgba(236, 72, 153, 0.1)", color: "#be185d" }}
+          >
+            Expolre Our Gallery
+          </span>
+          <h1
+            className="text-4xl md:text-6xl font-bold mb-6"
+            style={{ color: "#1a1a2e" }}
+          >
+            Our <span style={{ color: "#ec4899" }}>Gallery</span>
           </h1>
-          <p className="text-lg md:text-xl text-[#666] max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Take a visual tour of our modern facilities, dedicated medical team,
             and state-of-the-art equipment.
           </p>
@@ -151,15 +165,6 @@ const Gallery = () => {
           />
         </div>
       )}
-
-      {/* Footer */}
-      <footer className="bg-[#1a1a2e] text-white py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-white/60">
-            © 2024 Samarpan Hospital & Kidney Care Center. All rights reserved.
-          </p>
-        </div>
-      </footer>
     </main>
   );
 };

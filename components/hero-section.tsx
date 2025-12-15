@@ -1,5 +1,6 @@
 'use client";';
 import { ArrowRight, Sparkles, Heart, Shield, Clock } from "lucide-react";
+import Link from "next/link";
 
 // Animated Wave Component
 function AnimatedWave({ className = "" }) {
@@ -146,15 +147,21 @@ export default function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4">
               <button className="group relative px-8 py-4 bg-[#b94198]  rounded-xl font-bold text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <span className="relative z-10 flex items-center gap-2">
+                <Link
+                  href="/contact"
+                  className="relative z-10 flex items-center gap-2"
+                >
                   Schedule Now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </span>
+                </Link>
               </button>
 
-              <button className="px-8 py-4 bg-white rounded-xl font-bold text-gray-800 border-2 border-gray-200 hover:border-pink-300 transition-all duration-300 hover:bg-pink-50 shadow-sm">
+              <Link
+                href="/about"
+                className="px-8 py-4 bg-white rounded-xl font-bold text-gray-800 border-2 border-gray-200 hover:border-pink-300 transition-all duration-300 hover:bg-pink-50 shadow-sm"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
 
             {/* Metrics */}

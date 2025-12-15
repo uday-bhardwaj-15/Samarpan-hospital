@@ -24,7 +24,6 @@ export default function Home() {
       <WhyChooseUs />
       <BlogSection />
       <ContactForm />
-      <Footer />
     </main>
   );
 }

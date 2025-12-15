@@ -32,28 +32,10 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-8 items-center">
             <Link
-              href="#services"
+              href="/"
               className="text-gray-600 hover:text-blue-600 transition"
             >
-              Services
-            </Link>
-            <Link
-              href="#doctors"
-              className="text-gray-600 hover:text-blue-600 transition"
-            >
-              Doctors
-            </Link>
-            <Link
-              href="/departments"
-              className="text-gray-600 hover:text-blue-600 transition"
-            >
-              Departments
-            </Link>
-            <Link
-              href="#contact"
-              className="text-gray-600 hover:text-blue-600 transition"
-            >
-              Contact
+              Home
             </Link>
             <Link
               href="/about"
@@ -66,6 +48,24 @@ export default function Header() {
               className="text-gray-600 hover:text-blue-600 transition"
             >
               Gallery
+            </Link>
+            <Link
+              href="doctors"
+              className="text-gray-600 hover:text-blue-600 transition"
+            >
+              Doctors
+            </Link>
+            <Link
+              href="/departments"
+              className="text-gray-600 hover:text-blue-600 transition"
+            >
+              Departments
+            </Link>
+            <Link
+              href="contact"
+              className="text-gray-600 hover:text-blue-600 transition"
+            >
+              Contact
             </Link>
 
             <Button className="bg-[#b94198] text-white hover:bg-[#b94198]/10 hover:text-[#b94198]">
@@ -83,28 +83,10 @@ export default function Header() {
         {isOpen && (
           <div className="md:hidden pb-4 space-y-2 flex flex-col">
             <Link
-              href="#services"
+              href="/"
               className="block text-gray-600 hover:text-blue-600 py-2"
             >
-              Services
-            </Link>
-            <Link
-              href="#doctors"
-              className="block text-gray-600 hover:text-blue-600 py-2"
-            >
-              Doctors
-            </Link>
-            <Link
-              href="/departments"
-              className="block text-gray-600 hover:text-blue-600 py-2"
-            >
-              Departments
-            </Link>
-            <Link
-              href="#contact"
-              className="block text-gray-600 hover:text-blue-600 py-2"
-            >
-              Contact
+              Home
             </Link>
             <Link
               href="/about"
@@ -118,6 +100,25 @@ export default function Header() {
             >
               Gallery
             </Link>
+            <Link
+              href="doctors"
+              className="block text-gray-600 hover:text-blue-600 py-2"
+            >
+              Doctors
+            </Link>
+            <Link
+              href="/departments"
+              className="block text-gray-600 hover:text-blue-600 py-2"
+            >
+              Departments
+            </Link>
+            <Link
+              href="contact"
+              className="block text-gray-600 hover:text-blue-600 py-2"
+            >
+              Contact
+            </Link>
+
             <Button className="w-full bg-blue-600 hover:bg-blue-700">
               Book Appointment
             </Button>
