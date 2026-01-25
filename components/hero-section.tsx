@@ -124,7 +124,7 @@ export default function HeroSection() {
             <div className="inline-flex items-center gap-2 px-5 py-2 bg-pink-100 rounded-full border border-pink-200">
               <div className="w-2 h-2 bg-[#b94198] rounded-full animate-pulse" />
               <span className="text-[#b94198] text-sm font-semibold">
-                50,000+ Trusted Patients
+                20,000+ Trusted Patients
               </span>
             </div>
 

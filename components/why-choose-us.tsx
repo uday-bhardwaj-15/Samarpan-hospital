@@ -4,19 +4,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
 
 const reasons = [
-  { number: "41+", label: "Years of Excellence" },
-  { number: "12.5k+", label: "Happy Patients" },
-  { number: "8.7M+", label: "Surgeries Performed" },
-  { number: "400+", label: "Expert Doctors" },
+  { number: "20k+", label: "Patients Treated to Date" },
+  { number: "1000+", label: "Monthly OPD & IPD Patients" },
+  { number: "900+", label: "Monthly Dialysis Sessions" },
 ];
-
 const features = [
-  "Patient-centric care approach",
-  "Advanced medical technology",
-  "Expert and qualified doctors",
-  "Affordable treatment plans",
-  " 24/7 customer support",
-  "Transparent pricing",
+  "30-bed multi-specialty hospital with modern infrastructure",
+  "Advanced dialysis facility operating in 3 shifts",
+  "HDF dialysis with high-end equipment",
+  "Fully equipped ICU and modular operation theatre",
+  "24×7 emergency, pharmacy, and ambulance services",
+  "In-house diagnostics and pathology lab",
 ];
 
 export default function WhyChooseUs() {
@@ -27,7 +25,7 @@ export default function WhyChooseUs() {
           Why Choose Samarpan Hospital
         </h2>
 
-        <div className="grid md:grid-cols-4 gap-6 mb-12">
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
           {reasons.map((reason, idx) => (
             <Card key={idx} className="text-center">
               <CardContent className="p-6">

@@ -6,65 +6,99 @@ import TeamCarousel from "@/components/lightswind/team-carousel"; // adjust path
 
 const departmentCards = [
   {
-    title: "Nephrology",
-    subtitle: "Chronic Kidney Disease",
+    title: "Fistula Surgery",
+    subtitle: "Vascular Access Care",
     description:
-      "Kidney Transplant Planning and Follow Up, Acute Kidney Disease, Interventional Nephrology",
+      "AV fistula creation and related procedures for dialysis patients.",
     imageSrc:
-      "https://images.unsplash.com/photo-1618939304347-e91b1f33d2ab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGtpZG5leXxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=900&auto=format&fit=crop&q=60",
   },
   {
-    title: "Dialysis Unit",
-    subtitle: "Hemo Dialysis",
-    description: "CAPD, Peritoneal Dialysis",
-    imageSrc:
-      "https://images.unsplash.com/photo-1669930605340-801a0be1f5a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fERpYWx5c2lzJTIwVW5pdHxlbnwwfHwwfHx8MA%3D%3D",
-  },
-  {
-    title: "Operation Theater",
-    subtitle: "Kidney Biopsy",
+    title: "Radiology",
+    subtitle: "Diagnostic Imaging",
     description:
-      "AV Fistula Surgery, IJV/Femoral HD Catheterisation, IJV Permanent Tunneled HD Catheterisation",
+      "Radiology services supporting diagnosis through imaging and reporting.",
     imageSrc:
-      "https://images.unsplash.com/photo-1640876777002-badf6aee5bcc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8T3BlcmF0aW9ufGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1581595219315-a187dd40c322?w=900&auto=format&fit=crop&q=60",
   },
   {
-    title: "Physiotherapy",
-    subtitle: "Post Hospitalisation Care",
+    title: "Urology",
+    subtitle: "Urinary Tract Care",
     description:
-      "Stroke Rehabilitation, Post Trauma/Fracture Rehabilitation, AV Fistula Care Programme, Home Visit for Physiotherapy, Online Consultation, Call Now or Visit the Website",
+      "Diagnosis and treatment of urinary system and related disorders.",
     imageSrc:
-      "https://images.unsplash.com/photo-1706353399656-210cca727a33?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8UGh5c2lvdGhlcmFweXxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1631815587646-b85a3dbfd5da?w=900&auto=format&fit=crop&q=60",
   },
   {
-    title: "Clinical Guidance and Diagnosis",
-    subtitle: "Guidance for Complex Medical Decisions",
+    title: "Pain Clinic",
+    subtitle: "Pain Management",
     description:
-      "Evidence Based Medical Decisions, Evidence Based Practice, Diagnosis and Second Opinion",
+      "Pain management services for chronic and acute pain conditions.",
     imageSrc:
-      "https://images.unsplash.com/photo-1619691249147-c5689d88016b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RGlhZ25vc2lzfGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=900&auto=format&fit=crop&q=60",
   },
   {
-    title: "Pharmacy",
-    subtitle: "Post Hospitalisation Care",
+    title: "Critical Care",
+    subtitle: "Intensive Monitoring",
     description:
-      "Stroke Rehabilitation, Post Trauma/Fracture Rehabilitation, AV Fistula Care Programme, Home Delivery Medicine",
+      "Critical care services with continuous patient monitoring and support.",
     imageSrc:
-      "https://images.unsplash.com/photo-1576602976047-174e57a47881?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UGhhcm1hY3l8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=900&auto=format&fit=crop&q=60",
   },
   {
-    title: "Laboratory",
-    subtitle: "Home Collection Available",
-    description: "Contact Number:- 9826293340",
+    title: "Casualty",
+    subtitle: "Initial Medical Care",
+    description:
+      "Casualty services for immediate assessment and primary medical attention.",
     imageSrc:
-      "https://images.unsplash.com/photo-1602052577122-f73b9710adba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TGFib3JhdG9yeXxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1550831107-1553da8c8464?w=900&auto=format&fit=crop&q=60",
+  },
+  {
+    title: "Emergency Dialysis",
+    subtitle: "24×7 Dialysis Support",
+    description: "Emergency dialysis services available for urgent renal care.",
+    imageSrc:
+      "https://images.unsplash.com/photo-1669930605340-801a0be1f5a3?w=900&auto=format&fit=crop&q=60",
+  },
+  {
+    title: "Plasmapheresis",
+    subtitle: "Advanced Blood Therapy",
+    description:
+      "Plasmapheresis services for selective blood component therapy.",
+    imageSrc:
+      "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=900&auto=format&fit=crop&q=60",
   },
   {
     title: "Research",
-    subtitle: "Indian Chronic Kidney Disease Research",
-    description: "",
+    subtitle: "Clinical Research",
+    description:
+      "Clinical research activities focused on improving patient care outcomes.",
     imageSrc:
-      "https://plus.unsplash.com/premium_photo-1661761077411-d50cba031848?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8UmVzZWFyY2h8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=900&auto=format&fit=crop&q=60",
+  },
+  {
+    title: "VIP ICU",
+    subtitle: "Private Critical Care",
+    description:
+      "VIP ICU providing enhanced privacy and dedicated critical care support.",
+    imageSrc:
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&auto=format&fit=crop&q=60",
+  },
+  {
+    title: "Poly Clinic",
+    subtitle: "Outpatient Services",
+    description:
+      "Polyclinic services offering consultation across multiple specialties.",
+    imageSrc:
+      "https://images.unsplash.com/photo-1600959907703-125ba1374a12?w=900&auto=format&fit=crop&q=60",
+  },
+  {
+    title: "General Ward",
+    subtitle: "Inpatient Care",
+    description:
+      "General ward facilities for monitored inpatient treatment and recovery.",
+    imageSrc:
+      "https://images.unsplash.com/photo-1576765607924-1c8d9c2c0d8f?w=900&auto=format&fit=crop&q=60",
   },
 ];
 
@@ -101,7 +135,7 @@ export default function DepartmentsSection() {
             titleColor="rgba(12, 74, 162, 1)"
             // mobile tuned sizes
             cardWidth={300}
-            cardHeight={380}
+            cardHeight={320}
             cardRadius={18}
             showArrows={false} // on mobile, prefer swipe
             showDots={true}
