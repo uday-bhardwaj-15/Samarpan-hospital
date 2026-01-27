@@ -59,7 +59,7 @@ export default function QuickActions() {
       setShowLeftArrow(scrollRef.current.scrollLeft > 0);
       setShowRightArrow(
         scrollRef.current.scrollLeft <
-          scrollRef.current.scrollWidth - scrollRef.current.clientWidth - 10
+          scrollRef.current.scrollWidth - scrollRef.current.clientWidth - 10,
       );
     }
   };
@@ -92,7 +92,7 @@ export default function QuickActions() {
             className="flex gap-3 sm:gap-4 md:gap-6 overflow-x-auto md:grid md:grid-cols-4 md:overflow-visible scrollbar-hide"
           >
             {actions.map((action, idx) => (
-              <Link href={action.url}>
+              <Link href={action.url} key={action.url + idx}>
                 <Card
                   key={idx}
                   className="flex-shrink-0 w-40 sm:w-48 md:w-auto hover:shadow-lg transition cursor-pointer"
